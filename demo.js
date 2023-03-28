@@ -16,7 +16,8 @@ function startConnect(){
     client.onMessageArrived = onMessageArrived;
 
     client.connect({
-        onSuccess: onConnect
+        onSuccess: onConnect,
+        useSSL: true
     //    userName: userId,
     //    passwordId: passwordId
     });
